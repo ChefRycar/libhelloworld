@@ -42,5 +42,11 @@ pipeline {
                 }
             }
         }
+        stage('Trigger downstream builds') {
+            steps {
+                build job: 'national-parks', propagate: true, wait: false
+                build job: 'sample-node-app', propagate: true, wait: false
+            }
+        }
     }
 }
