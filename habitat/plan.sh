@@ -14,7 +14,7 @@ pkg_origin=nrycar
 
 # Required.
 # Sets the version of the package
-pkg_version="3.0.0"
+pkg_version="3.1.0"
 
 # Optional.
 # The name and email address of the package maintainer.
