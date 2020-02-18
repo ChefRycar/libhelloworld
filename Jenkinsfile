@@ -44,8 +44,8 @@ pipeline {
         }
         stage('Trigger downstream builds') {
             steps {
-                build job: 'national-parks', propagate: false, wait: false
-                build job: 'sample-node-app', propagate: false, wait: false
+                build job: 'national-parks/master', propagate: false, wait: false
+                build job: 'sample-node-app/master', propagate: false, wait: false
             }
         }
     }
